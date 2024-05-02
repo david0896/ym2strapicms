@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "config_parameters",
+  "info": {
+    "singularName": "config-parameter",
+    "pluralName": "config-parameters",
+    "displayName": "configParameter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "numberField": {
+      "type": "integer",
+      "default": 0
+    },
+    "numberFieldDecimal": {
+      "type": "decimal",
+      "default": 0
+    },
+    "emailField": {
+      "type": "email"
+    },
+    "dateField": {
+      "type": "date",
+      "default": "2001-01-01"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "config_parameter_chields": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::config-parameter-chield.config-parameter-chield"
+    }
+  }
+}

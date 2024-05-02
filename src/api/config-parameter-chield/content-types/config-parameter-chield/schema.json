@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "config_parameter_chields",
+  "info": {
+    "singularName": "config-parameter-chield",
+    "pluralName": "config-parameter-chields",
+    "displayName": "configParameterChield",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "numberField": {
+      "type": "integer",
+      "default": 0
+    },
+    "numberFieldDecimal": {
+      "type": "decimal",
+      "default": 0
+    },
+    "emailField": {
+      "type": "email"
+    },
+    "dateField": {
+      "type": "date"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
